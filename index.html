@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>任务管理应用</title>
+  
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>任务管理器</h1>
+    </header>
+    
+    <div class="task-form">
+      <div class="form-group">
+        <input type="text" id="task-input" placeholder="添加新任务...">
+        <button id="add-task">添加任务</button>
+      </div>
+    </div>
+    
+    <div class="task-filter">
+      <span>筛选任务:</span>
+      <button class="filter-btn active" data-filter="all">全部</button>
+      <button class="filter-btn" data-filter="active">进行中</button>
+      <button class="filter-btn" data-filter="completed">已完成</button>
+    </div>
+    
+    <ul class="task-list" id="task-list">
+      <!-- 任务将动态添加到这里 -->
+    </ul>
+    
+    <div class="empty-state" id="empty-state">
+      暂无任务，添加第一个任务吧！
+    </div>
+  </div>
+
+  
+</body>
+</html>
