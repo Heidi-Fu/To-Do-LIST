@@ -1,0 +1,136 @@
+
+    /* 基础样式 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+    
+    body {
+      background-color: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    
+    header {
+      background-color: #4a6fa5;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+    }
+    
+    .task-form {
+      padding: 20px;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .form-group {
+      display: flex;
+      margin-bottom: 15px;
+    }
+    
+    input[type="text"] {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px 0 0 4px;
+      font-size: 16px;
+    }
+    
+    button {
+      padding: 10px 15px;
+      background-color: #4a6fa5;
+      color: white;
+      border: none;
+      border-radius: 0 4px 4px 0;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+    
+    button:hover {
+      background-color: #3a5ca5;
+    }
+    
+    .task-filter {
+      padding: 15px 20px;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .filter-btn {
+      background-color: transparent;
+      color: #4a6fa5;
+      border: 1px solid #4a6fa5;
+      border-radius: 4px;
+      padding: 5px 10px;
+      margin-left: 5px;
+    }
+    
+    .filter-btn.active {
+      background-color: #4a6fa5;
+      color: white;
+    }
+    
+    .task-list {
+      padding: 0;
+    }
+    
+    .task-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      border-bottom: 1px solid #eee;
+      list-style: none;
+    }
+    
+    .task-item:last-child {
+      border-bottom: none;
+    }
+    
+    .task-item.completed {
+      background-color: #e8f5e9;
+      text-decoration: line-through;
+      color: #888;
+    }
+    
+    .task-content {
+      flex: 1;
+      margin-right: 10px;
+    }
+    
+    .delete-btn {
+      background-color: #f44336;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+    }
+    
+    .delete-btn:hover {
+      background-color: #d32f2f;
+    }
+    
+    .empty-state {
+      padding: 30px;
+      text-align: center;
+      color: #888;
+      font-style: italic;
+    }
